@@ -114,7 +114,7 @@ func AddUser(d Userdata) int {
 	return userID
 }
 
-func deleteUser(id int) error {
+func DeleteUser(id int) error {
 	db, err := openConnection()
 	if err != nil {
 		return err
